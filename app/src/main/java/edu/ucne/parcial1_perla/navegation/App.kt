@@ -8,7 +8,7 @@ import edu.ucne.parcial1_perla.ui.theme.Parcial.ConsultaParcialScreen
 import edu.ucne.parcial1_perla.ui.theme.Parcial.RegistroParcialScreen
 
 @Composable
-fun MyApp() {
+fun App() {
     val navHostController = rememberNavController()
 
     NavHost(navController = navHostController, startDestination = Screen.ConsultaParcialScreen.route){

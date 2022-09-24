@@ -46,11 +46,11 @@ fun ConsultaParcialScreen(
     }
 
     @Composable
-    fun RowParcial(examen: Parcial) {
+    fun RowParcial(parcial: Parcial) {
         Row() {
-            Text(text = examen.cosa1)
-            Text(text = examen.cosa2)
-            Text(text = examen.algo.toString())
+            Text(text = parcial.cosa1)
+            Text(text = parcial.cosa2)
+            Text(text = parcial.algo.toString())
         }
     }
 }

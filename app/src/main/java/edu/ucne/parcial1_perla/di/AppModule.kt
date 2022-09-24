@@ -10,7 +10,7 @@ object AppModule {
     @Singleton
     @Provides
     fun ProvideParcialBd(@ApplicationContext context: Context): ParcialBd {
-        val DATABASE_NAME = "examenBd"
+        val DATABASE_NAME = "parcialBd"
         return Room.databaseBuilder(
             context,
             ParcialBd::class.java,
