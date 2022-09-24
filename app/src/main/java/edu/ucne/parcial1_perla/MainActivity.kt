@@ -10,6 +10,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import edu.ucne.parcial1_perla.navegation.App
 import edu.ucne.parcial1_perla.ui.theme.Parcial1_PerlaTheme
 
 class MainActivity : ComponentActivity() {
@@ -22,14 +23,14 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    Greeting("Android")
+                    App()
                 }
             }
         }
     }
 }
 
-@Composable
+/*@Composable
 fun Greeting(name: String) {
     Text(text = "Hello $name!")
 }
@@ -40,4 +41,4 @@ fun DefaultPreview() {
     Parcial1_PerlaTheme {
         Greeting("Android")
     }
-}
+}*/
