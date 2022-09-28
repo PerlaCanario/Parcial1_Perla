@@ -31,7 +31,7 @@ fun RegistroArticuloScreen(backToListado:() -> Unit, viewModel: ArticuloViewMode
 
     Scaffold(
         topBar = {
-            TopAppBar(title = { Text(text = "Registro") })
+            TopAppBar(title = { Text(text = "Registro de Articulo") })
         },
 
         floatingActionButton = {
