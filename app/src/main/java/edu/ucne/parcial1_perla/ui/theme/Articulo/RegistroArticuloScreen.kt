@@ -29,7 +29,6 @@ fun RegistroArticuloScreen(backToListado:() -> Unit, viewModel: ArticuloViewMode
     val context = LocalContext.current
 
 
-
     Scaffold(
         topBar = {
             TopAppBar(title = { Text(text = "Registro") })
