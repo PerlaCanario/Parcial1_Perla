@@ -1,4 +1,4 @@
-package edu.ucne.parcial1_perla.ui.theme.Parcial
+package edu.ucne.parcial1_perla.ui.theme.Articulo
 
 import androidx.compose.material.OutlinedButton
 import androidx.compose.material.Text
@@ -7,9 +7,9 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
 
 @Composable
-fun RegistroParcialScreen(
+fun RegistroArticuloScreen(
     navHostController: NavHostController,
-    viewModel: ParcialViewModel = hiltViewModel()
+    viewModel: ArticuloViewModel = hiltViewModel()
 ) {
 
     OutlinedButton(onClick = {

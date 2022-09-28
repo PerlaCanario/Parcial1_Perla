@@ -5,7 +5,7 @@ import androidx.room.PrimaryKey
 
 
 @Entity(tableName = "Parcial")
-data class Parcial (
+data class Articulo (
     @PrimaryKey(autoGenerate = true)
     val id : Int = 0,
     val cosa1 : String,

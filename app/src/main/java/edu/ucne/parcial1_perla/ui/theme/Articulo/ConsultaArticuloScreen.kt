@@ -1,4 +1,4 @@
-package edu.ucne.parcial1_perla.ui.theme.Parcial
+package edu.ucne.parcial1_perla.ui.theme.Articulo
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -11,19 +11,19 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
-import edu.ucne.parcial1_perla.data.entity.Parcial
+import edu.ucne.parcial1_perla.data.entity.Articulo
 import edu.ucne.parcial1_perla.navegation.Screen
 
 @Composable
-fun ConsultaParcialScreen(
+fun ConsultaArticuloScreen(
 
     navHostController: NavHostController,
-    viewModel : ParcialViewModel = hiltViewModel()
+    viewModel : ArticuloViewModel = hiltViewModel()
 ) {
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text(text = "Consulta Parcial") }
+                title = { Text(text = "Consulta Articulo") }
             )
         },
         floatingActionButton = {
@@ -46,11 +46,11 @@ fun ConsultaParcialScreen(
     }
 
     @Composable
-    fun RowParcial(parcial: Parcial) {
+    fun RowArticulo(articulo: Articulo) {
         Row() {
-            Text(text = parcial.cosa1)
-            Text(text = parcial.cosa2)
-            Text(text = parcial.algo.toString())
+            Text(text = articulo.cosa1)
+            Text(text = articulo.cosa2)
+            Text(text = articulo.algo.toString())
         }
     }
 }
