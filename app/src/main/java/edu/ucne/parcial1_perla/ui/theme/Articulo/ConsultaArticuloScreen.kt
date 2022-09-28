@@ -28,7 +28,7 @@ fun ConsultaArticuloScreen(
         },
         floatingActionButton = {
             FloatingActionButton(onClick = {
-                navHostController.navigate(Screen.RegistroParcialScreen.route)
+                navHostController.navigate(Screen.RegistroArticuloScreen.route)
             }) {
                 Icon(imageVector = Icons.Default.Add, contentDescription = null)
             }
@@ -48,9 +48,9 @@ fun ConsultaArticuloScreen(
     @Composable
     fun RowArticulo(articulo: Articulo) {
         Row() {
-            Text(text = articulo.cosa1)
-            Text(text = articulo.cosa2)
-            Text(text = articulo.algo.toString())
+            Text(text = articulo.Descripcion)
+            Text(text = articulo.Marca)
+            Text(text = articulo.Existencia.toString())
         }
     }
 }
