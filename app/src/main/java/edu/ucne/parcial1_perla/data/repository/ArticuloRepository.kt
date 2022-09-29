@@ -8,7 +8,12 @@ import javax.inject.Inject
 class ArticuloRepository @Inject constructor(
     val articuloDao: ArticuloDao
 ) {
-    suspend fun Insertar(articulo: Articulo) = articuloDao.Insertar(articulo)
+    suspend fun Insertar(articulo: Articulo) {
+        articuloDao.Insertar(articulo)
+    }
 
-    fun Lista(): Flow<List<Articulo>> = articuloDao.Lista()
+    fun Lista(): Flow<List<Articulo>> {
+        return articuloDao.Lista()
+    }
+
 }
