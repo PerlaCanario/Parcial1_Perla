@@ -4,12 +4,12 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 
-@Entity(tableName = "Parcial")
+@Entity(tableName = "Articulo")
 data class Articulo (
     @PrimaryKey(autoGenerate = true)
-    val id : Int = 0,
-    val cosa1 : String,
-    val cosa2: String,
-    val algo: Double = 0.00
+    val ArticuloId : Int = 0,
+    val Descripcion : String,
+    val Marca: String,
+    val Existencia : Double = 0.00
 )
 
