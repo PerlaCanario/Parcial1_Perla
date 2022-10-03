@@ -20,7 +20,14 @@ import androidx.navigation.NavHostController
 import edu.ucne.parcial1_perla.navegation.Screen
 
 @Composable
-fun RegistroArticuloScreen(backToListado:() -> Unit, viewModel: ArticuloViewModel = hiltViewModel()){
+fun RegistroArticuloScreen(
+    navHostController: NavHostController,
+    viewModel : ArticuloViewModel = hiltViewModel()
+
+) {
+
+
+
     val ScaffoldState = rememberScaffoldState()
 
     var validarDescripcion by remember{ mutableStateOf(false) }
@@ -61,7 +68,7 @@ fun RegistroArticuloScreen(backToListado:() -> Unit, viewModel: ArticuloViewMode
                         if(viewModel.existencia.isDigitsOnly() && viewModel.existencia.toDouble() > 0.0){
                             viewModel.Guardar()
                             Toast.makeText(context, "Guardado", Toast.LENGTH_SHORT).show()
-                            backToListado()
+                           // backToListado()
                         }else{
                             Toast.makeText(context, "La existencia debe de ser mayor a 0", Toast.LENGTH_SHORT).show()
                         }
